@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Rock Scissors</title>
+<!--    <link rel="stylesheet" type="text/css" href="style.css">-->
+</head>
+
+<body>
+    <h2>Paper Rock Scissors</h2>
+
+    <button id="connectButton" onclick="connectWallet()">Connect MetaMask</button>
+    <div id="metamaskErrorMessage"></div>
+
+    <div id="gameControls" style="display:none;">
+        <label for="choice">Choose your move:</label>
+        <select id="choice">
+            <option value="0">Rock</option>
+            <option value="1">Paper</option>
+            <option value="2">Scissors</option>
+        </select>
+
+        <div>
+            <label for="betAmount">Bet Amount (in Ether):</label>
+            <input type="text" id="betAmount" placeholder="Enter your bet amount">
+        </div>
+
+        <div>
+            <button onclick="playGame()">Play</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.4.umd.min.js" type="application/javascript"></script>
+    <script src="./script.js" type="application/javascript"></script>
+</body>
+
+</html>
